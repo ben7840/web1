@@ -4,6 +4,7 @@ import axios from "axios"
 export default function Register(){
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    //w3
     async function register(ev){
         ev.preventDefault();
         await axios.post('/register', {username,password})
